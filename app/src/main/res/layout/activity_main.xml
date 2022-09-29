@@ -21,24 +21,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/user_field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:ems="10"
         android:gravity="center"
         android:inputType="textPersonName"
-        android:text="Введите город"
+        android:hint="Введите город"
+        app:layout_constraintBottom_toTopOf="@+id/main_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/weather_title" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/result_info"
         android:layout_width="170dp"
         android:layout_height="71dp"
-        android:layout_marginBottom="380dp"
+        android:layout_marginBottom="280dp"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,14 +47,14 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/main_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Узнать погоду"
+        android:layout_marginBottom="52dp"
         android:background="@color/cardview_dark_background"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        android:text="Узнать погоду"
+        app:layout_constraintBottom_toTopOf="@+id/result_info"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
