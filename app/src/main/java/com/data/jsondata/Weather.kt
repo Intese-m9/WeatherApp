@@ -1,4 +1,4 @@
-package com.data
+package com.data.jsondata
 
 data class Weather(
     val base: String,

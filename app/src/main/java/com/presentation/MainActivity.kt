@@ -1,20 +1,17 @@
-package com.example.weatherapp
+package com.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import com.retrofit.RetrofitHelper
-import com.retrofit.WeatherApi
+import com.example.weatherapp.R
+import com.domain.RetrofitHelper
+import com.domain.WeatherApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import org.json.JSONObject
-import retrofit2.create
-import java.net.URL
 
 class MainActivity : AppCompatActivity() {
 
@@ -49,7 +46,7 @@ class MainActivity : AppCompatActivity() {
                     val temp = result.body()?.main?.temp//температура
                     val desc = result.body()?.weather?.get(0)?.description
                     result_info?.text = "Температура: $temp\n$desc"
-                   // println(weather)
+                    // println(weather)
                 }
             }
         }

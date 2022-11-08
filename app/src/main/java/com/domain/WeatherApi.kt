@@ -1,6 +1,6 @@
-package com.retrofit
+package com.domain
 
-import com.data.Weather
+import com.data.jsondata.Weather
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

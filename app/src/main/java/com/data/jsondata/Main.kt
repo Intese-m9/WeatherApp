@@ -1,4 +1,4 @@
-package com.data
+package com.data.jsondata
 
 data class Main(
     val feels_like: Double,
